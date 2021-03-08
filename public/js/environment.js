@@ -18,14 +18,16 @@ function createEnvironment(scene) {
 
 
   //non-interactive objects
-  // let texture2 = new THREE.TextureLoader().load("../assets/texture.png");
-  // let myGeometry2 = new THREE.PlaneGeometry(3, 3, 3);
-  // let myMaterial2 = new THREE.MeshBasicMaterial({ map: texture });
-  // myMesh2 = new THREE.Mesh(myGeometry2, myMaterial2);
-  // myMesh2.position.set(0, 4, -5);
-  // scene.add(myMesh2);
+  let texture2 = new THREE.TextureLoader().load("../assets/texture.png");
+  let myGeometry2 = new THREE.PlaneGeometry(3, 3, 3);
+  let myMaterial2 = new THREE.MeshBasicMaterial({ map: texture });
+  myMesh2 = new THREE.Mesh(myGeometry2, myMaterial2);
+  // myMesh2.rotation.y = Math.PI / 2;
+  myMesh2.position.set(4, 4, -5);
+  scene.add(myMesh2);
 
-  // myMesh2.userData.link = "https://www.juliantisomathews.com/";
+  myMesh2.userData.link = "https://www.apple.com/";
+  myMesh2.userData.isInteractable = true;
 }
 
 
